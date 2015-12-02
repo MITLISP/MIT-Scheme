@@ -1,0 +1,43 @@
+#lang planet neil/sicp
+
+;(define (p x)(+ x 1))
+;(p 1)
+;2
+;(define (loop x)(if (< x 100) (+ x 1) 1))
+
+;a function invoking another function
+;(define (y x) (+ 4 x))
+;(define (p x) (+ 1 (y x)))
+
+;a function calling itself
+;(define (x z) ((x z)))
+
+
+
+
+;(define (x z i) ((+ 1 i )(if (< i 100)  ((x z (+ 1 1))) 0)))
+
+
+;(define (X i) (if (> i 100) i (x (? i))))
+;(define (? i) (+ i 1))
+;(define (HMM i)(X 1.0 i))
+;Now lets do the square root
+;i = guess
+;x = square root of x
+;question what is x (or i)?
+
+
+(define (SQ i x) (if (Yes i x) i (SQ (improve i x) x)))
+
+(define (improve i x) i (average i (/ x i )))
+(define (Yes i x)(< (abs (- (square i) x)) .001))
+
+
+(define (average x y)(/ (+ x y) 2))
+(define (square j) (* j j))
+(define (abs x)
+  (cond ((> x 0) x)
+        ((= x 0) 0)
+        ((< x 0) (- x))))
+(define (sqrt x)(SQ 1.0 x))
+                         

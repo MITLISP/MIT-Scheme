@@ -1,0 +1,5 @@
+;factorial
+
+(define (factorial n)
+  (if (< n 0) n
+      (* n (factorial (- n 1)))))

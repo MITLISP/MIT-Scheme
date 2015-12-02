@@ -1,0 +1,15 @@
+;square root
+(define try (lambda (guess x)
+		(if (good-enuf? guess x)
+			guess
+			(try (improve guess x) x))))
+
+(define improve (lambda (guess x)
+		(average guess (/ x guess))))
+
+(define average (lambda (a b) (/ (+ a b) 2)))
+
+(define good-enuf? (lambda (guess x)
+		(< (abs (- (square guess) x)) 0.001)))
+
+(define sqrt (lambda (x) (try 1 x)))

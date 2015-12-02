@@ -1,0 +1,25 @@
+#lang planet neil/sicp
+(define balance 100)
+
+(define (make-account starting-balance)
+  (set! balance starting-balance)
+  (lambda (amount)
+    (set! balance (+ balance amount))
+    balance))
+
+(define (trieu amount) (+ amount 9999999))
+
+(define (make-account2 balance)
+  (define (withdraw amount)
+    (set! balance (- balance amount))
+    balance)
+  (define (deposit amount)
+    (set! balance (+ balance amount))
+    balance)
+  (define (dispatch m)
+    (cond ((eq? m 'withdraw) withdraw)
+          ((eq? m 'deposit) deposit)
+          ((eq? m 'trieu) trieu)
+          (else (error 'undefined--DISPATCH' m))))
+    dispatch)
+(define holly-acct (make-account2 1200))

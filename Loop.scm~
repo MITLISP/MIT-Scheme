@@ -1,0 +1,4 @@
+#lang planet neil/sicp
+(define (jello x) (+ 1 x)
+(define (hello x)(if (> x 100) (jello 1) (hello (+ 1 x))))
+  

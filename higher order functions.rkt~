@@ -1,0 +1,12 @@
+(define (main a b c)
+  (define (sub d)
+    (+ a b c d))
+  (sub (+ 10 a)))
+
+(define (roots a b c)
+  (define (roots1 d)
+    (se (/ (+ (- b) d) (* 2 a))
+        (/ (- (- b) d) (* 2 a)) ))
+        (roots1 (sqrt (- (* b b) (* 4 a c)))))
+
+(define (se x y)(+ x y))

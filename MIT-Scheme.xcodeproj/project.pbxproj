@@ -6,10 +6,15 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXFileReference section */
+		525995611A045012001CF67A /* Temp.scm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Temp.scm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		525995551A044E2D001CF67A = {
 			isa = PBXGroup;
 			children = (
+				525995611A045012001CF67A /* Temp.scm */,
 			);
 			sourceTree = "<group>";
 		};
@@ -23,6 +28,7 @@
 			buildPhases = (
 			);
 			buildToolPath = /usr/bin/scheme;
+			buildWorkingDirectory = "/Users/trieu/Desktop/MIT-Scheme";
 			dependencies = (
 			);
 			name = "MIT-Scheme";

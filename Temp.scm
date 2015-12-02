@@ -1,0 +1,1 @@
+(define trieu 24)

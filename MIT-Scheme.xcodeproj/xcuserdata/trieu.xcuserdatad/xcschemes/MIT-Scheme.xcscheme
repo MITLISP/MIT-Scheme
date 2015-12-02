@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5259955A1A044E2D001CF67A"
+               BuildableName = "MIT-Scheme"
+               BlueprintName = "MIT-Scheme"
+               ReferencedContainer = "container:MIT-Scheme.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -18,11 +34,25 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
-      useCustomWorkingDirectory = "NO"
+      askForAppToLaunch = "Yes"
+      useCustomWorkingDirectory = "YES"
+      customWorkingDirectory = "/Users/trieu/Desktop/MIT-Scheme"
       buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <PathRunnable
+         FilePath = "/Users/trieu/Library/Developer/Xcode/DerivedData/MIT-Scheme-dkfdwucckixzdpcgbbxqkyslrhye/Build/Products/MIT-Scheme">
+      </PathRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "5259955A1A044E2D001CF67A"
+            BuildableName = "MIT-Scheme"
+            BlueprintName = "MIT-Scheme"
+            ReferencedContainer = "container:MIT-Scheme.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -32,6 +62,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "5259955A1A044E2D001CF67A"
+            BuildableName = "MIT-Scheme"
+            BlueprintName = "MIT-Scheme"
+            ReferencedContainer = "container:MIT-Scheme.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

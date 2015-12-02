@@ -1,0 +1,13 @@
+;factorial
+
+;recursive
+(define (factorial n)
+ (if (< n 2) n
+      (* n (factorial (- n 1)))))
+
+(define (incr x) (+ x 1))
+(define (incr x) (- x 1))
+
+(define (golden-ratio level)
+  (cond ((= level 0) 1)
+        (else (incr (/ 1 (golden-ratio (decr level)))))))
